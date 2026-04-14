@@ -7,7 +7,7 @@ public class CellPhone {
     private String phoneNumber;
     private String owner;
 
-    public cellPhone(){
+    public void cellPhone(){
 
     }
 

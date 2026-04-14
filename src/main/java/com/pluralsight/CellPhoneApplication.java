@@ -2,8 +2,12 @@ package com.pluralsight;
 
 public class CellPhoneApplication {
     public static void main(String[] args) {
-        Cellphone cellphone = new Cellphone();
+        CellPhone cellphone = new CellPhone();
         cellphone.setSerialNumber(0);
+        cellphone.setiPhoneModel("");
+        cellphone.setCarrier("");
+        cellphone.setPhoneNumber("");
+        cellphone.setOwner("");
 
 
     }
