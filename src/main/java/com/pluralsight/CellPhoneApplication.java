@@ -15,7 +15,7 @@ public class CellPhoneApplication {
     }
 
     private static void displayCellPhone(CellPhone cellPhone) {
-        System.out.print("Serial number: " + cellPhone.getSerialNumber());
+        System.out.println("Serial number: " + cellPhone.getSerialNumber());
         System.out.println("Model: " + cellPhone.getiPhoneModel());
         System.out.println("Carrier: " + cellPhone.getCarrier());
         System.out.println("Phone number " + cellPhone.getPhoneNumber());
