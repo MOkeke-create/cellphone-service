@@ -8,6 +8,8 @@ public class CellPhoneApplication {
         CellPhone cellPhone = new CellPhone();
         getCellphoneData(cellPhone);
         displayCellPhone(cellPhone);
+        dialCellPhone(cellPhone);
+
 
 
     }
@@ -32,9 +34,11 @@ public class CellPhoneApplication {
         cellphone.setPhoneNumber(scanner.nextLine());
         System.out.print("Enter owner name: ");
         cellphone.setOwner(scanner.nextLine());
+    }
 
-
-
-
+    private static void dialCellPhone(CellPhone cellPhone){
+        System.out.print("Enter number you want to dial: ");
+        cellPhone.setPhone2(scanner.nextLine());
+        System.out.println(cellPhone.getOwner() + " is calling " + cellPhone.getPhone2());
     }
 }

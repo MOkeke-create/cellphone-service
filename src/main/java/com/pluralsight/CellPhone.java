@@ -6,6 +6,8 @@ public class CellPhone {
     private String carrier;
     private String phoneNumber;
     private String owner;
+    private String phone1;
+    private String phone2;
 
     public void cellPhone(){
         this.serialNumber = 0;
@@ -55,5 +57,22 @@ public class CellPhone {
     public void setOwner(String owner) {
         this.owner = owner;
     }
+
+    public void setPhone1(String phone1) {
+        this.phone1 = phone1;
+    }
+
+    public void setPhone2(String phone2) {
+        this.phone2 = phone2;
+    }
+
+    public String getPhone1() {
+        return phone1;
+    }
+
+    public String getPhone2() {
+        return phone2;
+    }
 }
+
 
