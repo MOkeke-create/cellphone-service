@@ -1,21 +1,26 @@
 package com.pluralsight;
 
 public class CellPhone {
-    private double serialNumber;
+    private int serialNumber;
     private String iPhoneModel;
     private String carrier;
     private String phoneNumber;
     private String owner;
 
     public void cellPhone(){
+        this.serialNumber = 0;
+        this.iPhoneModel = "";
+        this.carrier = "";
+        this.phoneNumber = "";
+        this.owner = "";
 
     }
 
-    public double getSerialNumber() {
+    public int getSerialNumber() {
         return serialNumber;
     }
 
-    public void setSerialNumber(double serialNumber) {
+    public void setSerialNumber(int serialNumber) {
         this.serialNumber = serialNumber;
     }
 
