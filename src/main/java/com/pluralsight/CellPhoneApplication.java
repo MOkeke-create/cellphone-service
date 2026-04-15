@@ -5,10 +5,15 @@ import java.util.Scanner;
 public class CellPhoneApplication {
     private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
-        CellPhone cellPhone = new CellPhone();
-        getCellphoneData(cellPhone);
-        displayCellPhone(cellPhone);
-        dialCellPhone(cellPhone);
+        CellPhone cellPhone1 = new CellPhone();
+        CellPhone cellPhone2 = new CellPhone();
+        getCellphoneData(cellPhone1);
+        displayCellPhone(cellPhone1);
+        getCellphoneData(cellPhone2);
+        cellPhone1.dial(cellPhone2.getPhoneNumber());
+        cellPhone2.dial(cellPhone1.getPhoneNumber());
+
+
 
 
 
@@ -36,9 +41,6 @@ public class CellPhoneApplication {
         cellphone.setOwner(scanner.nextLine());
     }
 
-    private static void dialCellPhone(CellPhone cellPhone){
-        System.out.print("Enter number you want to dial: ");
-        cellPhone.setPhone2(scanner.nextLine());
-        System.out.println(cellPhone.getOwner() + " is calling " + cellPhone.getPhone2());
-    }
+
+
 }
